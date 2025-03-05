@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitnessCare - Your Health Journey Starts Here</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <i class="bi bi-heart-pulse-fill text-3xl text-blue-600"></i>
+                        <span class="ml-2 text-xl font-bold text-gray-800">FitnessCare</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#" class="text-gray-700 hover:text-blue-600 px-3 py-2 font-medium">Home</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-600 px-3 py-2 font-medium">Fitness Parameter</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-600 px-3 py-2 font-medium">Care Tips</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-600 px-3 py-2 font-medium">Library</a>
+                    <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Doctor Consult</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-700">
+                        <i class="bi bi-list text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#" class="block text-gray-700 px-3 py-2 font-medium">Home</a>
+                <a href="#" class="block text-gray-700 px-3 py-2 font-medium">Fitness Parameter</a>
+                <a href="#" class="block text-gray-700 px-3 py-2 font-medium">Care Tips</a>
+                <a href="#" class="block text-gray-700 px-3 py-2 font-medium">Library</a>
+                <a href="#" class="block bg-blue-600 text-white px-4 py-2 rounded-lg mt-2">Doctor Consult</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient min-h-screen flex items-center pt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">Your Journey to Better Health Starts Here</h1>
+                <p class="text-xl text-gray-200 mb-8">Get personalized fitness advice, expert care tips, and professional consultation</p>
+                <div class="space-x-4">
+                    <a href="#" class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 inline-block">Get Started</a>
+                    <a href="#" class="bg-white text-blue-600 px-8 py-3 rounded-lg hover:bg-gray-100 inline-block">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900">Why Choose FitnessCare?</h2>
+                <p class="mt-4 text-gray-600">Everything you need to maintain a healthy lifestyle</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-6 bg-gray-50 rounded-xl text-center">
+                    <i class="bi bi-clipboard2-pulse text-4xl text-blue-600"></i>
+                    <h3 class="mt-4 text-xl font-semibold">Track Your Progress</h3>
+                    <p class="mt-2 text-gray-600">Monitor your fitness parameters and health metrics in real-time</p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-xl text-center">
+                    <i class="bi bi-journal-text text-4xl text-blue-600"></i>
+                    <h3 class="mt-4 text-xl font-semibold">Expert Care Tips</h3>
+                    <p class="mt-2 text-gray-600">Access curated health and wellness tips from industry experts</p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-xl text-center">
+                    <i class="bi bi-person-video3 text-4xl text-blue-600"></i>
+                    <h3 class="mt-4 text-xl font-semibold">Professional Consultation</h3>
+                    <p class="mt-2 text-gray-600">Connect with certified healthcare professionals instantly</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="bg-blue-600 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-bold text-white mb-4">Ready to Start Your Fitness Journey?</h2>
+                <p class="text-xl text-blue-100 mb-8">Join thousands of users who have transformed their lives with FitnessCare</p>
+                <a href="#" class="bg-white text-blue-600 px-8 py-3 rounded-lg hover:bg-gray-100 inline-block">Sign Up Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="bi bi-heart-pulse-fill text-3xl text-blue-500"></i>
+                        <span class="ml-2 text-xl font-bold text-white">FitnessCare</span>
+                    </div>
+                    <p class="text-sm">Your trusted partner in health and fitness journey.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white">About Us</a></li>
+                        <li><a href="#" class="hover:text-white">Services</a></li>
+                        <li><a href="#" class="hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white">Blog</a></li>
+                        <li><a href="#" class="hover:text-white">FAQ</a></li>
+                        <li><a href="#" class="hover:text-white">Support</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Connect</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-white"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="hover:text-white"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="hover:text-white"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="hover:text-white"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p>&copy; 2023 FitnessCare. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (event) => {
+            if (!mobileMenuButton.contains(event.target) && !mobileMenu.contains(event.target)) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+    </script>
+<script>document.body.addEventListener('wheel', e => { if (!e.ctrlKey) return; e.preventDefault(); return }, { passive: false })</script>
+	</body>
+</html>
